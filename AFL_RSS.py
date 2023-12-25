@@ -30,7 +30,7 @@ for article in articles:
     publication_date = datetime.datetime.now()  # Replace with actual date, if available
 
     # Fetch the full content
-    full_content = get_article_content(link)
+    full_content = get_article_content("https://www.afl.com.au/" + link)
 
     rss_item = PyRSS2Gen.RSSItem(
         title=title,
