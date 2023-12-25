@@ -15,6 +15,10 @@ for article in articles:
     title = article.find('h2').text  # Find the title
     relative_link = article.find('a')['href']  # Extract the relative link
 
+    # Skip the article if the link contains '/aflw/'
+    if '/aflw/' in relative_link:
+        continue  # Skips the rest of the loop and proceeds to the next article
+    
     # Check if the link is already absolute or not
     if not relative_link.startswith('http'):
         link = base_url + relative_link  # Concatenate to form the full URL
