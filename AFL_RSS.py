@@ -22,6 +22,9 @@ for article in articles:
     if 'fantasy-preview' in relative_link:
         continue
     
+    if '/video/' in relative_link:
+        continue
+
     # Check if the link is already absolute or not
     if not relative_link.startswith('http'):
         link = base_url + relative_link  # Concatenate to form the full URL
