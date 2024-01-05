@@ -1,4 +1,4 @@
-name: AFL.com.au RSS Feed Generator
+name: Generate RSS Feed
 on:
   workflow_dispatch:  # This allows manual triggering
   schedule:
