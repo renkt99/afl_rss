@@ -20,7 +20,7 @@ jobs:
       run: python AFL_RSS.py  # Replace with your script name
     - name: Commit and push if changes
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "tomjrenk@protonmail.com"
+        git config --global user.name "renkt99"
         git commit -am "Update feed"
         git push
