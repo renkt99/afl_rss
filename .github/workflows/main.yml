@@ -1,5 +1,6 @@
 name: Run Script
 on:
+  workflow_dispatch:  # This allows manual triggering
   schedule:
     - cron: '23 * * * *'  # Runs at the start of every hour
 
