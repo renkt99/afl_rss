@@ -24,4 +24,4 @@ jobs:
         git config --global user.email "tomjrenk@protonmail.com"
         git config --global user.name "renkt99"
         git commit -am "Update feed"
-        git push https://${{ secrets.GH_PAT }}@github.com/renkt99/afl_rss.git
+        git push https://${{ secrets.GH_PAT }}@github.com/renkt99/afl_rss
