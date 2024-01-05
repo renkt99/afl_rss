@@ -1,7 +1,7 @@
 name: Run Script
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs at the start of every hour
+    - cron: '23 * * * *'  # Runs at the start of every hour
 
 jobs:
   run_script:
