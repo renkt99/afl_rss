@@ -18,6 +18,9 @@ for article in articles:
     # Skip the article if the link contains '/aflw/'
     if '/aflw/' in relative_link:
         continue  # Skips the rest of the loop and proceeds to the next article
+
+    if 'fantasy-preview' in relative_link:
+        continue
     
     # Check if the link is already absolute or not
     if not relative_link.startswith('http'):
